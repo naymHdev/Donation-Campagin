@@ -4,6 +4,7 @@ import Error from "../Components/Errror/Error";
 import Home from "../Components/Home/Home";
 import Donation from "../Components/Donation/Donation";
 import Statistics from "../Components/Statistics/Statistics";
+import DonationDetails from "../Components/Pages/DonationDetails/DonationDetails";
 
 const createRouter = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const createRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element:<Home></Home>,
-        loader: () => fetch('./donete.json')
+        element: <Home></Home>,
+        loader: () => fetch("./donete.json"),
       },
       {
         path: "donation",
@@ -22,48 +23,14 @@ const createRouter = createBrowserRouter([
       },
       {
         path: "statistics",
-        element: <Statistics></Statistics>
-      }
-    ]
-  }
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: '/camp/:id',
+        element: <DonationDetails></DonationDetails>,
+      },
+    ],
+  },
 ]);
 
-export default createRouter
-
-
-// import { createBrowserRouter } from "react-router-dom";
-// import MainLayout from "../Layout/MainLayout";
-// import Home from "../../Pages/Home";
-// import Favorites from "../../Pages/Favorites";
-// import Login from "../../Pages/Login";
-// import Error from "../../Pages/Error";
-// import MyPhone from "../../Pages/MyPhone";
-// const createRouter = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <MainLayout></MainLayout>,
-//     errorElement: <Error></Error>,
-//     children: [
-//       {
-//         path: "/",
-//         element: <Home></Home>,
-//         loader: () => fetch("/phone.json"),
-//       },
-//       {
-//         path: "favorite",
-//         element: <Favorites></Favorites>,
-//       },
-//       {
-//         path: "login",
-//         element: <Login></Login>,
-//       },
-//       {
-//         path: "/phone/:id",
-//         element: <MyPhone></MyPhone>,
-//         loader: () => fetch("/phone.json"),
-//       },
-//     ],
-//   },
-// ]);
-
-// export default createRouter;
+export default createRouter;
