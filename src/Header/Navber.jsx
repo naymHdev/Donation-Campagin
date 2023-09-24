@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom";
 
 const Navber = () => {
   return (
-    <div>
+    <div className="flex justify-between items-center">
       <div>
-        <img src=".././logo.png" alt="" />
+        <img className="w-40" src="/src/assets/Logo.png" alt="" />
       </div>
-      <nav className="">
-        <ul className="flex justify-end py-6 shadow-md gap-5">
+      <nav>
+        <ul className="flex justify-end py-6 gap-5">
           <li>
             <NavLink
               to="/"
