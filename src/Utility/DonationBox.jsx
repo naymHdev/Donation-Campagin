@@ -17,14 +17,17 @@ const DonationBox = () => {
   console.log(donetBox);
 
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="">
       {noFound ? (
         <P>{noFound}</P>
       ) : (
-        <div>
+        <div className="grid grid-cols-2">
           {donetBox.map((money) => (
             <GetDonate key={money.id} money={money}></GetDonate>
           ))}
+          <div>
+            <button className="btn">See More</button>
+          </div>
         </div>
       )}
     </div>
