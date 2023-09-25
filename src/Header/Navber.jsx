@@ -7,7 +7,7 @@ const Navber = () => {
         <img className="w-40" src="/src/assets/Logo.png" alt="" />
       </div>
       <nav>
-        <ul className="flex justify-end py-6 gap-5">
+        <ul className="flex justify-end py-6 gap-5 ">
           <li>
             <NavLink
               to="/"
@@ -40,6 +40,7 @@ const Navber = () => {
           </li>
         </ul>
       </nav>
+
     </div>
   );
 };
