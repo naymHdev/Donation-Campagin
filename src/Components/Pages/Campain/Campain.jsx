@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Campain = ({ camp }) => {
-  console.log(camp);
+  // console.log(camp);
 
   const { id, picture, category, title } = camp || {};
 
