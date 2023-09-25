@@ -1,5 +1,5 @@
 import React from "react";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 const MyDonation = ({ donates }) => {
   // console.log(donates);
@@ -11,21 +11,25 @@ const MyDonation = ({ donates }) => {
     const addFundArr = [];
 
     const addDonate = JSON.parse(localStorage.getItem("Donets"));
+
     if (!addDonate) {
-        addFundArr.push(donates);
+      addFundArr.push(donates);
+      localStorage.setItem("Donets", JSON.stringify(addFundArr));
+      swal("Good job!", "You clicked the button!", "success");
+
+    } else {
+
+      const isExist = addDonate.find((donates) => donates.id === id);
+    //   console.log(isExist);
+
+      if (!isExist) {
+        addFundArr.push(...addDonate, donates);
         localStorage.setItem("Donets", JSON.stringify(addFundArr));
         swal("Good job!", "You clicked the button!", "success");
-    }else{
-        const isExist = addDonate.find((donates) => donates.id === id);
-        // console.log(isExist);
-        if (!isExist) {
-            addFundArr.push(...addDonate, donates);
-            localStorage.setItem("Product", JSON.stringify(addFundArr));
-            swal("Good job!", "You clicked the button!", "success");
-          } else {
-            swal("Alrady Added!", "You clicked the button!", "warning");
-          }
-
+         
+      } else {
+        swal("Alrady Added!", "You clicked the button!", "warning");
+      }
     }
   };
 
