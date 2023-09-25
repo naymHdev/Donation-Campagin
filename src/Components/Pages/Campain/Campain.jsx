@@ -14,16 +14,16 @@ const Campain = ({ camp }) => {
           <div
             className="p-3 h-36"
             style={{
-              background: camp.color.card_bg,
-              color: camp.color.text_and_button_bg,
+              background: camp.card_bg,
+              color: camp.text_and_button_bg,
             }}
           >
             <div>
               <button
                 className="font-bold border-none btn"
                 style={{
-                  background: camp.color.category_bg,
-                  color: camp.color.text_and_button_bg,
+                  background: camp.category_bg,
+                  color: camp.text_and_button_bg,
                 }}
               >
                 {category}
