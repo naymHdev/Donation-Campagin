@@ -8,6 +8,7 @@ const Campain = ({ camp }) => {
 
   return (
     <div>
+      
     <Link to={`/camp/${id}`}>  <div className="hover:cursor-pointer">
         <div className="rounded-xl bg-gray-400">
           <img className="w-full bg-cover" src={picture} alt="" />
