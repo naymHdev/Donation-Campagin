@@ -20,7 +20,7 @@ const Navber = () => {
           </li>
           <li>
             <NavLink
-              to="donation"
+              to="/donation"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-teal-500 underline" : ""
               }
@@ -30,7 +30,7 @@ const Navber = () => {
           </li>
           <li>
             <NavLink
-              to="statistics"
+              to="/statistics"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-teal-500 underline" : ""
               }

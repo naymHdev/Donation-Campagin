@@ -3,8 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import Error from "../Components/Errror/Error";
 import Home from "../Components/Home/Home";
 import Donation from "../Components/Donation/Donation";
-import Statistics from "../Components/Statistics/Statistics";
 import DonationDetails from "../Components/Pages/DonationDetails/DonationDetails";
+import NewStatics from "../Components/Statistics/NewStatics";
 
 const createRouter = createBrowserRouter([
   {
@@ -18,12 +18,12 @@ const createRouter = createBrowserRouter([
         loader: () => fetch("../donete.json"),
       },
       {
-        path: "donation",
+        path: "/donation",
         element: <Donation></Donation>,
       },
       {
-        path: "statistics",
-        element: <Statistics></Statistics>,
+        path: "/statistics",
+        element: <NewStatics></NewStatics>,
         loader: () => fetch("../donete.json"),
       },
       {

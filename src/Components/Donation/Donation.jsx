@@ -33,9 +33,11 @@ const Donation = () => {
         </div>
       )}
       <div className="text-center items-center mt-5">
-        <button onClick={() => setShow(!isShow)} className="btn bg-green-700 text-white font-bold">
-          { isShow ? "See Less" : "See More"}
-        </button>
+        {
+            donation.length > 3 && <button onClick={() => setShow(!isShow)} className="btn bg-green-700 text-white font-bold">
+            { isShow ? "See Less" : "See More"}
+          </button>
+        }
       </div>
     </div>
   );

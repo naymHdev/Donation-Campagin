@@ -1,28 +1,28 @@
 import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Label } from 'recharts';
+// import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Label } from 'recharts';
 
 const Statistics = () => {
 
-const campainsdata = useLoaderData()
-  console.log(campainsdata.data);
+const totalDonation = useLoaderData()
+  console.log(totalDonation.data);
   const data = [
-    { name: 'Group A', value: 900 },
-    { name: 'Group B', value: 1100 },
+    { name: 'Group A', value: totalDonation.length },
+    { name: 'Group B', value: "4" },
   ];
   const COLORS = ['#FF444A', '#00C49F'];
 
-  // useEffect( () => {
-  //   const navigation = JSON.parse(localStorage.getItem());
+  useEffect( () => {
+    const totalDonation = JSON.parse(localStorage.getItem());
     
-  // }, [])
+  }, [])
 
   return (
     <div>
       <div>
         <h2>Welcome To Piechart</h2>
 
-        <ResponsiveContainer width="100%" height={400}>
+        {/* <ResponsiveContainer width="100%" height={400}>
           <PieChart>
             <Pie
               data={data}
@@ -52,7 +52,7 @@ const campainsdata = useLoaderData()
             </Pie>
             <Legend />
           </PieChart>
-        </ResponsiveContainer>
+        </ResponsiveContainer> */}
       </div>
     </div>
   );
