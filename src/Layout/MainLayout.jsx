@@ -10,7 +10,7 @@ const MainLayout = () => {
             <Navber></Navber>
             {
                 navigation.state === "loading" ?
-                <p className='text-7xl font-bold text-orange-600 flex h-screen justify-center'>Loding...</p> :
+                <p className='text-7xl font-bold text-orange-600 flex h-screen items-center justify-center'>Loding...</p> :
                 <Outlet></Outlet>
             }
         </div>

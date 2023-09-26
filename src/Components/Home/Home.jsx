@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Banner from '../../Header/Banner';
 import Campains from '../Pages/Campains';
 
 const Home = () => {
@@ -10,7 +9,6 @@ const Home = () => {
 
     return (
         <div>
-           <Banner></Banner>
            <Campains campains={campains}></Campains>
         </div>
     );
