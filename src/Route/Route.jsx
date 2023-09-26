@@ -24,6 +24,7 @@ const createRouter = createBrowserRouter([
       {
         path: "statistics",
         element: <Statistics></Statistics>,
+        loader: () => fetch("../donete.json"),
       },
       {
         path: '/camp/:id',

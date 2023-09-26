@@ -6,13 +6,14 @@ const GetDonate = ({ item }) => {
   const { picture, title, price, category, card_bg, category_bg, text_and_button_bg } = item || {};
   return (
     <>
-      <div className="mt-5 lg:flex justify-start items-center">
+      <div className="mt-5 lg:flex justify-start items-center ">
         <div className="">
-          <img src={picture} alt="" />
+          <img className="w-56" src={picture} alt="" />
         </div>
-        <div className="space-y-2 p-2 border rounded-xl lg:w-[450px]" style={{ backgroundColor: card_bg }}>
+
+        <div className="border rounded-xl lg:w-[350px] " style={{ backgroundColor: card_bg }}>
           <button
-            className="btn ml-5"
+            className="btn ml-5 mt-2"
             style={{ backgroundColor: category_bg, color: text_and_button_bg }}
           >
             {category}

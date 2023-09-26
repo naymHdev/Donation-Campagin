@@ -35,7 +35,7 @@ const MyDonation = ({ donates }) => {
 
   return (
     <div>
-      <div>
+      <div className="mb-8">
         <div className="w-full mt-3 flex justify-center items-center">
           <img className="w-full mt-10 rounded-md h-[80vh]" src={picture} alt="" />
         </div>

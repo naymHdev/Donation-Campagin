@@ -15,12 +15,12 @@ const Campains = ({ campains }) => {
   return (
     <div>
       <div
-        className=" h-[70vh]"
+        className=" h-[70vh] rounded-xl"
         style={{
           backgroundImage: "url(https://i.ibb.co/sHwLwYn/doctor-vacation.jpg)",
         }}
       >
-        <div className="hero-overlay bg-opacity-70"></div>
+        <div className="hero-overlay rounded-xl bg-opacity-70"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md lg:-mt-96">
             <h1 className="mb-5 text-white text-2xl font-bold">I Grow By Helping People In Need</h1>
