@@ -14,7 +14,41 @@ const Campains = ({ campains }) => {
 
   return (
     <div>
-      <div
+
+      <div>
+        
+        <div className="hero h-[70vh] rounded-xl" style={{backgroundImage: 'url(https://i.ibb.co/sHwLwYn/doctor-vacation.jpg)'}}>
+    <div className="hero-overlay rounded-xl bg-opacity-80"></div>
+    <div className="hero-content text-center text-neutral-content">
+      <div>
+        <h1 className="mb-5 text-5xl font-bold ">I Grow By Helping People In Need</h1>
+
+        <div className="lg:flex md:justify-center sm:justify-center   md:items-center">
+              <input
+                className="mb-2 p-3  rounded-md text-black border-none lg:px-9"
+                type="search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                name=""
+                id=""
+                placeholder="Search here...."
+              />
+              <button
+                onClick={() => handleSearch()}
+                className="btn lg:rounded-tl-none lg:rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-red-600 border-none "
+              >
+                Search
+              </button>
+            </div>
+      </div>
+    </div>
+  </div>
+      </div>
+
+
+
+
+      {/* <div
         className=" h-[70vh] rounded-xl"
         style={{
           backgroundImage: "url(https://i.ibb.co/sHwLwYn/doctor-vacation.jpg)",
@@ -43,7 +77,7 @@ const Campains = ({ campains }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8 mb-8">
         {displayCategory.map((camp) => (

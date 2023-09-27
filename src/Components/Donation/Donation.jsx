@@ -22,7 +22,7 @@ const Donation = () => {
           {noDataFound}
         </p>
       ) : (
-        <div className="grid grid-cols-2 gap-5 mb-8">
+        <div className="grid md:grid-cols-2 gap-5 mb-8">
 
 {
           isShow
