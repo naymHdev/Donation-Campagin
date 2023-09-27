@@ -16,13 +16,13 @@ const Donation = () => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       {noDataFound ? (
         <p className="flex justify-center items-center text-4xl h-screen font-bold text-red-600">
           {noDataFound}
         </p>
       ) : (
-        <div className="grid md:grid-cols-2 gap-5 mb-8">
+        <div className="grid md:grid-cols-2 gap-5 mb-8 -ml-2 md:-ml-0">
 
 {
           isShow

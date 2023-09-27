@@ -35,7 +35,7 @@ const Campains = ({ campains }) => {
               />
               <button
                 onClick={() => handleSearch()}
-                className="btn rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-red-600 border-none "
+                className="btn text-white rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-red-600 border-none "
               >
                 Search
               </button>
