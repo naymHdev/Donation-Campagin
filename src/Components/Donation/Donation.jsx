@@ -22,22 +22,27 @@ const Donation = () => {
           {noDataFound}
         </p>
       ) : (
-        <div className="grid grid-cols-2 gap-5">
-          {isShow
+        <div className="grid grid-cols-2 gap-5 mb-8">
+
+{
+          isShow
             ? donation.map((item) => <GetDonate key={item.id} item={item}></GetDonate>)
-            : donation.slice(0, 4).map((item) => <GetDonate key={item.id} item={item}></GetDonate>)
-          }
+            : 
+            donation.slice(0, 4).map((item) => <GetDonate key={item.id} item={item}></GetDonate>)
+            }
+
         </div>
       )}
-      <div className="text-center items-center mt-5 mb-5">
-        {isShow ? null : (
+      {donation.length > 4 && !isShow && (
+        <div className="text-center items-center mt-5 mb-5">
           <button onClick={() => setShow(true)} className="btn bg-green-700 text-white font-bold">
             See All
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
 
 export default Donation;
+
