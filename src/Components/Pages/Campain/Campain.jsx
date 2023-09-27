@@ -10,10 +10,10 @@ const Campain = ({ camp }) => {
     <div>
       
     <Link to={`/camp/${id}`}>  <div className="hover:cursor-pointer">
-        <div className="rounded-xl bg-gray-400">
+        <div className="rounded-xl ">
           <img className="w-full bg-cover" src={picture} alt="" />
           <div
-            className="p-3 h-36"
+            className="p-3 h-36 rounded-b-xl"
             style={{
               background: camp.card_bg,
               color: camp.text_and_button_bg,

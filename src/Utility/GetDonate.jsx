@@ -10,7 +10,7 @@ const GetDonate = ({ item }) => {
           <img className="" src={picture} alt="" />
         </div>
 
-        <div className="lg:w-72 w-[313px] mx-auto lg:p-4 lg:-ml-2 rounded-sm lg:rounded-none" style={{ backgroundColor: card_bg }}>
+        <div className="lg:w-72 w-[313px] mx-auto lg:p-4 lg:-ml-2 lg:rounded-r-xl  rounded-b-xl" style={{ backgroundColor: card_bg }}>
           <div className="-mt-0 p-3 lg:p-0">
             <button
               className="px-2 py-1 rounded-md font-bold"
