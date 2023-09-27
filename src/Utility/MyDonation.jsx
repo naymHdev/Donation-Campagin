@@ -4,7 +4,7 @@ import swal from "sweetalert";
 const MyDonation = ({ donates }) => {
   // console.log(donates);
 
-  const { id, picture, description, title, price } = donates || {};
+  const { id, picture, description, title, price,  text_and_button_bg } = donates || {};
 
   const addDonation = () => {
     // console.log(donates);
@@ -39,8 +39,8 @@ const MyDonation = ({ donates }) => {
         <div className="w-full mt-3 flex justify-center items-center">
           <img className="w-full mt-10 rounded-md h-[80vh]" src={picture} alt="" />
         </div>
-       <div className="-mt-24 p-6 relative backdrop-blur-sm">
-          <button className="bg-red-600 text-white btn border-none" onClick={() => addDonation()}>
+       <div className="-mt-24 p-6 relative bg-[#00000070]">
+          <button style={{ backgroundColor: text_and_button_bg }} className=" text-white btn border-none" onClick={() => addDonation()}>
             <span className="font-semibold">Donate</span>${price}
           </button>
         </div>

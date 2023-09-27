@@ -15,7 +15,6 @@ const Donation = () => {
     }
   }, []);
 
-//   console.log(isShow);
   return (
     <div>
       {noDataFound ? (
@@ -24,20 +23,18 @@ const Donation = () => {
         </p>
       ) : (
         <div className="grid grid-cols-2 gap-5">
-          {
-          isShow
+          {isShow
             ? donation.map((item) => <GetDonate key={item.id} item={item}></GetDonate>)
-            : 
-            donation.slice(0, 4).map((item) => <GetDonate key={item.id} item={item}></GetDonate>)
-            }
+            : donation.slice(0, 4).map((item) => <GetDonate key={item.id} item={item}></GetDonate>)
+          }
         </div>
       )}
-      <div className="text-center items-center mt-5">
-        {
-            donation.length > 3 && <button onClick={() => setShow(!isShow)} className="btn bg-green-700 text-white font-bold">
-            { isShow ? "See Less" : "See More"}
+      <div className="text-center items-center mt-5 mb-5">
+        {isShow ? null : (
+          <button onClick={() => setShow(true)} className="btn bg-green-700 text-white font-bold">
+            See All
           </button>
-        }
+        )}
       </div>
     </div>
   );
