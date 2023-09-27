@@ -23,7 +23,7 @@ const Campains = ({ campains }) => {
       <div>
         <h1 className="mb-5 text-5xl font-bold ">I Grow By Helping People In Need</h1>
 
-        <div className="lg:flex md:justify-center sm:justify-center   md:items-center">
+        <div className="lg:flex md:justify-center sm:justify-center ">
               <input
                 className="mb-2 p-3  rounded-md text-black border-none lg:px-9"
                 type="search"
@@ -35,7 +35,7 @@ const Campains = ({ campains }) => {
               />
               <button
                 onClick={() => handleSearch()}
-                className="btn lg:rounded-tl-none lg:rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-red-600 border-none "
+                className="btn rounded-tl-none rounded-tr-2xl rounded-br-2xl rounded-bl-none bg-red-600 border-none "
               >
                 Search
               </button>

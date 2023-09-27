@@ -5,7 +5,7 @@ const GetDonate = ({ item }) => {
   const { picture, title, price, category, card_bg, category_bg, text_and_button_bg } = item || {};
   return (
     <>
-      <div className="lg:flex items-center">
+      <div className="lg:flex items-center w-auto mx-auto">
         <div className="lg:p-2 p-0">
           <img className="" src={picture} alt="" />
         </div>

@@ -4,7 +4,7 @@ const Navber = () => {
   return (
     <div className="flex justify-between items-center">
       <div>
-        <img className="lg:w-40 w-20" src="./src/assets/Logo.png" alt="" />
+        <img className="lg:w-40 w-20" src="./logo.png" alt="" />
       </div>
       <nav>
         <ul className="flex justify-end py-6 ml-2 gap-2 lg:gap-5 ">
